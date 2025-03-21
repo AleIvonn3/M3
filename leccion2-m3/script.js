@@ -1,7 +1,7 @@
 //alert ("Hola");
 //45, 60, 75, 0
 
-let nota = 65;
+let nota = 95;
 
 
 if (nota >= 90) {
