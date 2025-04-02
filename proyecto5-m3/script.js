@@ -1,33 +1,29 @@
-let Libro1 = {
-    titulo: "Alicia en el pais de las maravillas",
-    autor: "Lewis Carroll",
-    año: 1865,
-    genero: "Ficcion",  
-    Editorial: "Macmillan Publishers",
-    estado: "Disponible",
 
-    listadecap: { 
-        cap1: "En la madriguera del conejo",
-        cap2: "El charco de lágrimas",
-        cap3: "Una carrera electoral",
-        cap4: "El conejo envía una pequeña factura",
+
+function biblioteca(titulo, autor, autor2, año, genero, editorial, estado, listadecap){
+    this.titulo = titulo;
+    this.autor = autor;
+    this.autor2 = autor2;
+    this.año = año;
+    this.genero = genero;
+    this.editorial = editorial;
+    this.estado = estado;
+    this.listadecap = listadecap;    
+    this.libreria = function (){
+        console.log("El libro titulado " + this.titulo + " es de los autores " + this.autor + " y " + this.autor2 + ", fue publicado en el año " + this.año + " este libro es de genero " + this.genero + " y esta " + this.estado);
+        console.log("El libro " + titulo + " tiene los siguientes capitulos: " + this.listadecap)
     }
-    }
+}
 
-console.log("El libro titulado " + Libro1.titulo + " es del autor " + Libro1.autor + " y fue publicado en el año " + Libro1.año + " por la editorial " + Libro1.Editorial + " este libro es de genero " + Libro1.genero + " y esta " + Libro1.estado + " para leer. ");
-console.log("El libro tiene los siguientes capitulos: " + Libro1.listadecap.cap1 + ", " + Libro1.listadecap.cap2 + ", " + Libro1.listadecap.cap3 + ", " + Libro1.listadecap.cap4);
-
-
-let Libro2 = {
-    titulo: "De Mí Para Mí, La Tormenta Pasará",
-    autor1: "Chriss ChrissBraund",
-    autor2: "Nacarid Portal",
-    año: 2023,
-    genero: "Poesía",  
-    estado: "Prestado",
-    }
-
-console.log("El libro titulado " + Libro2.titulo + " es de los autores " + Libro2.autor1 + " y " + Libro2.autor2 + ", fue publicado en el año " + Libro2.año + " este libro es de genero " + Libro2.genero + " y esta " + Libro2.estado);
+let libro1 = new biblioteca("Alicia en el pais de las maravillas", "Lewis Carroll", "---",1865, "Ficcion", "Macmillan Publishers", "Disponible", "12"); 
+libro1.libreria();
 
 
+
+let libro2 = new biblioteca("De Mí Para Mí, La Tormenta Pasará", "Chriss ChrissBraund", "Nacarid Portal",2023, "Poesía", "---", "Prestado", "No tiene"); 
+libro2.libreria();
+
+
+console.table(libro1);
+console.table(libro2);
 
