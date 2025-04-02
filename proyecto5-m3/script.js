@@ -14,5 +14,5 @@ let Libro1 = {
     }
     }
 
-console.log("El libro titulado " + Libro1.titulo + "es del autor " + Libro1.autor + "y fue publicado en el año " + Libro1.año + "por la editorial " + Libro1.Editorial + " este libro es de genero" + Libro1.genero + "y esta " + Libro1.estado);
+console.log("El libro titulado " + Libro1.titulo + " es del autor " + Libro1.autor + " y fue publicado en el año " + Libro1.año + " por la editorial " + Libro1.Editorial + " este libro es de genero " + Libro1.genero + " y esta " + Libro1.estado);
 
