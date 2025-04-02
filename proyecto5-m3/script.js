@@ -14,5 +14,20 @@ let Libro1 = {
     }
     }
 
-console.log("El libro titulado " + Libro1.titulo + " es del autor " + Libro1.autor + " y fue publicado en el año " + Libro1.año + " por la editorial " + Libro1.Editorial + " este libro es de genero " + Libro1.genero + " y esta " + Libro1.estado);
+console.log("El libro titulado " + Libro1.titulo + " es del autor " + Libro1.autor + " y fue publicado en el año " + Libro1.año + " por la editorial " + Libro1.Editorial + " este libro es de genero " + Libro1.genero + " y esta " + Libro1.estado + " para leer. ");
+console.log("El libro tiene los siguientes capitulos: " + Libro1.listadecap.cap1 + ", " + Libro1.listadecap.cap2 + ", " + Libro1.listadecap.cap3 + ", " + Libro1.listadecap.cap4);
+
+
+let Libro2 = {
+    titulo: "De Mí Para Mí, La Tormenta Pasará",
+    autor1: "Chriss ChrissBraund",
+    autor2: "Nacarid Portal",
+    año: 2023,
+    genero: "Poesía",  
+    estado: "Prestado",
+    }
+
+console.log("El libro titulado " + Libro2.titulo + " es de los autores " + Libro2.autor1 + " y " + Libro2.autor2 + ", fue publicado en el año " + Libro2.año + " este libro es de genero " + Libro2.genero + " y esta " + Libro2.estado);
+
+
 
