@@ -1,0 +1,38 @@
+body {
+  background-color: lightblue;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+#titulo {
+  color: brown;
+  font-size: 55px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+textarea[type="text"] {
+  width: 80%;
+  padding: 50px;
+  margin: 20px 0 20px 0;
+  border: none;
+  background-color: #bd81c580;
+  border-radius: 10px;
+}
+
+button {
+  background-color: #da38bf8e;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#mensajesAplicacion {
+  text-align: center;
+  color: rgb(177, 3, 3);
+}

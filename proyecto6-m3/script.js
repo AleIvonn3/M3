@@ -3,15 +3,16 @@ function agregarcomen(){
     let agregarcominput = document.getElementById("agregarcominput");
 
     if(agregarcominput.value === ""){
-        alert("El campo de tarea está vacío. Por favor agrega un comentario");
-        document.getElementById("mensajesAplicacion").innerText = "El campo de tarea está vacío. Por favor agrega una tarea"
+        document.getElementById("mensajesAplicacion").innerText = "El campo está vacío. Por favor agrega un comentario"
         return;
     }
 
-    let nuevoLi = document.createElement("");
-    nuevoLi.innerText = agregarcominput.value;
+    let listacomul = document.getElementById("listacomul");
 
-    listaTareasUl.appendChild(nuevoLi);
+    let nuevoli = document.createElement("li");
+    nuevoli.innerText = agregarcominput.value;
+
+    listacomul.appendChild(nuevoli);
 
     agregarcominput.value = "";
     document.getElementById("mensajesAplicacion").innerText = "";
@@ -20,4 +21,3 @@ function agregarcomen(){
 let agregarcombtn = document.getElementById("agregarcombtn");
 agregarcombtn.addEventListener("click", agregarcomen); 
 
-// NOTA: Cuando trabajamos con addEventListener, los eventos NO deben llevar la palabra "on" al inicio.
