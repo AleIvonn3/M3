@@ -9,7 +9,7 @@ function agregarcomen(){
 
     let listacomul = document.getElementById("listacomul");
 
-    let nuevoli = document.createElement("li");
+    let nuevoli = document.createElement("p");
     nuevoli.innerText = agregarcominput.value;
 
     listacomul.appendChild(nuevoli);
