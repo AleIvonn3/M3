@@ -10,7 +10,14 @@ function agregarcomen(){
     let listacomul = document.getElementById("listacomul");
 
     let nuevoli = document.createElement("p");
-    nuevoli.innerText = agregarcominput.value;
+
+    // Obtener la fecha y hora actual
+    let fechaActual = new Date();
+    let fechaFormateada = fechaActual.toLocaleDateString(); // Formato de fecha (ej. 08/04/2025)
+    let horaFormateada = fechaActual.toLocaleTimeString(); // Formato de hora (ej. 14:30:00)
+
+    // Agregar el comentario junto con la fecha y hora
+    nuevoli.innerText = `${agregarcominput.value} (Agregado el ${fechaFormateada} a las ${horaFormateada})`;
 
     listacomul.appendChild(nuevoli);
 
