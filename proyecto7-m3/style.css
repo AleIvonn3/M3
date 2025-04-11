@@ -1,0 +1,43 @@
+body {
+  background-color: #670170;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.option {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.option label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.output {
+  margin: 1rem 0;
+  background: #0d0150;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#genera {
+  background-color: #0d0150;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
