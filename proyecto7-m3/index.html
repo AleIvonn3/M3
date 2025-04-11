@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password</title>
+  </head>
+  <body>
+    <h1>Generador de Paswords - Proyecto 7</h1>
+
+    <div class="container">
+      <div class="output" id="passwordOutput">Password</div>
+      <label>Longitud de caracter: <span id="valordelongitud">8</span></label>
+      <input type="range" min="8" max="22" value="8" id="barrita" />
+
+      <div class="options">
+        <label>
+          <input type="checkbox" id="uppercase" checked />
+          Incluyeletrasmayusculas</label
+        >
+        <label>
+          <input type="checkbox" id="lowercase" checked /> Incluye letras
+          minusculas</label
+        >
+        <label
+          ><input type="checkbox" id="numbers" checked /> Incluye numeros</label
+        >
+        <label
+          ><input type="checkbox" id="symbols" checked /> Incluye
+          simbolos</label
+        >
+      </div>
+
+      <button id="genera">GENERA ➜</button>
+    </div>
+  </body>
+</html>
