@@ -37,3 +37,6 @@ const longdecontra = parseInt(barrita.value);
     });
 
 
+//Muestra la fuerza de la contraseña
+
+
