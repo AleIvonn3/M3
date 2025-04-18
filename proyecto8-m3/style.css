@@ -1,0 +1,51 @@
+* {
+  background-color: lightblue;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 20px;
+}
+
+textarea[type="text"] {
+  width: 65%;
+  padding: 30px;
+  margin: 20px 0 20px 0;
+  border: none;
+  background-color: #bd81c580;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  background-color: #da38bf8e;
+  color: rgb(0, 0, 0);
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 11%;
+  height: 8%;
+  font-weight: bold;
+}
+
+p {
+  color: rgb(42, 25, 190);
+  font-size: 20px;
+}
+
+#titulo {
+  color: brown;
+  font-size: 55px;
+  text-align: center;
+}
+
+#mensajesAplicacion {
+  text-align: center;
+  color: rgb(177, 3, 3);
+  font-size: 18px;
+}
