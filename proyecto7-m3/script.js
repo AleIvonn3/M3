@@ -38,5 +38,35 @@ const longdecontra = parseInt(barrita.value);
 
 
 //Muestra la fuerza de la contraseña
+function evalfuer(password) {
+    const info = document.getElementById("nivelseguro");
+    let fuerza = 0;
 
+    if (password.length > 8) fuerza ++;
+    if (password.length >= 15) fuerza ++;
+    if (/[A-Z]/.test(password)) fuerza ++;
+    if (/[a-z]/.test(password)) fuerza ++;
+    if (/[0-9]/.test(password)) fuerza ++;
+    if (/[^A-Za-z0-9]/.test(password)) fuerza ++;
+
+    let textfuerza = "";
+    let color = "";
+
+    switch (fuerza) {
+        case 0:
+
+        case 1:
+            textfuerza = "Débil";
+            color = "red";
+            break;
+        case 2:
+            textfuerza = "Contraseña media";
+            color = "yellow";
+            break;
+        case 3:
+            textfuerza = "Contraseña fuerte";
+            color = "green";
+            break;
+    }
+}
 

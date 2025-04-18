@@ -22,6 +22,7 @@ body {
 .option label {
   display: block;
   margin-bottom: 0.5rem;
+  cursor: pointer;
 }
 
 .output {
@@ -30,6 +31,15 @@ body {
   padding: 0.5rem;
   border-radius: 5px;
   font-weight: bold;
+}
+
+.nivel_seguro {
+  background-color: #160c4d88;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 14px;
 }
 
 #genera {
